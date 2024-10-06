@@ -10,8 +10,8 @@ pay_pension <- function(monthly_pay, pension_rate = 0.098) {
   #'
   #' @examples pay_pension(3833)
 
-  pension_amount <- monthly_pay * pension_rate
+  monthly_pension <- monthly_pay * pension_rate
 
-  return(pension_amount)
+  return(monthly_pension)
 
 }
