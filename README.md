@@ -9,7 +9,12 @@
 paycheckr is a toy R package to help me with my personal finances. The
 real aim behind paycheckr is for me to learn how to make R packages.
 
-# Variable names
+## For the attention of my employer
+
+paycheckr is a fun package that I work on in my spare time. I am not
+getting paid to check my pay.
+
+## Variable names
 
 I have tried to name variables in a consistent format, referring to the
 type of amount and the time interval it relates to.
@@ -21,10 +26,10 @@ function names as a verb. For example, the “pay_pension” function
 returns the amount of money I have to **pay** into my pension from my
 **income**.
 
-**Categories**: income, paye (PAYE - income tax), pension and ni
-(National Insurance)
+**Categories**: workhours, income, paye (PAYE - income tax), pension and
+ni (National Insurance)
 
-**Intervals**: daily, weekly, monthly, annual
+**Intervals**: hourly, daily, weekly, monthly, annual
 
 **Modifiers**: taxable
 
