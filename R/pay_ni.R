@@ -21,17 +21,21 @@ pay_ni <- function(weekly_income,
   #' @examples pay_ni(350)
 
   weekly_ni <- dplyr::case_when(
+
+    # Income lower than standard bracket
     weekly_income < standard_bracket_lower ~0,
 
-    (weekly_income > standard_bracket_lower &
-       weekly_income < standard_bracket_higher)
+    # Income within the standard bracket
+    (weekly_income >= standard_bracket_lower &
+       weekly_income <= standard_bracket_higher)
 
     ~(weekly_income - standard_bracket_lower) * standard_ni_rate,
 
+    # Income above the standard bracket
     weekly_income > standard_bracket_higher ~((
       standard_bracket_higher - standard_bracket_lower) *
         standard_ni_rate) +
-      ((weekly_income-standard_bracket_higher) * upper_ni_rate))
+      ((weekly_income - standard_bracket_higher) * upper_ni_rate))
 
   return(weekly_ni)
 
