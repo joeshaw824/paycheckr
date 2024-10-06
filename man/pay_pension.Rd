@@ -4,10 +4,10 @@
 \alias{pay_pension}
 \title{Calculate the amount of pay put into your pension}
 \usage{
-pay_pension(monthly_pay, pension_rate = 0.098)
+pay_pension(monthly_income, pension_rate = 0.098)
 }
 \arguments{
-\item{monthly_pay}{Monthly pay amount in pounds.}
+\item{monthly_income}{Monthly pay amount in pounds.}
 
 \item{pension_rate}{The pension rate, which defaults to 9.8\%.}
 }
