@@ -5,7 +5,7 @@
 \title{Calculate income tax on Pay As You Earn (PAYE)}
 \usage{
 pay_paye(
-  annual_pay_taxable,
+  annual_income_taxable,
   personal_allowance = 12570,
   basic_rate_upper = 50270,
   higher_rate_upper = 125140,
@@ -15,7 +15,7 @@ pay_paye(
 )
 }
 \arguments{
-\item{annual_pay_taxable}{Taxable annual income in pounds}
+\item{annual_income_taxable}{Taxable annual income in pounds}
 
 \item{personal_allowance}{The personal allowance you don't pay income tax on}
 

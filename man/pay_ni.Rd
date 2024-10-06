@@ -5,7 +5,7 @@
 \title{Calculate national insurance payments}
 \usage{
 pay_ni(
-  weekly_pay,
+  weekly_income,
   standard_bracket_lower = 242,
   standard_bracket_higher = 967,
   standard_ni_rate = 0.08,
@@ -13,11 +13,11 @@ pay_ni(
 )
 }
 \arguments{
-\item{weekly_pay}{Weekly pay in pounds}
+\item{weekly_income}{Weekly income in pounds}
 
-\item{standard_bracket_lower}{The lower pay threshold for the standard bracket}
+\item{standard_bracket_lower}{The lower income threshold for the standard bracket}
 
-\item{standard_bracket_higher}{The higher pay threshold for the standard bracket}
+\item{standard_bracket_higher}{The higher income threshold for the standard bracket}
 
 \item{standard_ni_rate}{The standard rate of national insurance}
 

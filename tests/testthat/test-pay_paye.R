@@ -1,5 +1,5 @@
 test_that("pay_paye works for pay below first bracket", {
-  expect_equal(pay_paye(annual_pay_taxable = 500,
+  expect_equal(pay_paye(annual_income_taxable = 500,
                         personal_allowance = 12570,
                         basic_rate_upper = 50270,
                         higher_rate_upper = 125140,
@@ -10,7 +10,7 @@ test_that("pay_paye works for pay below first bracket", {
 })
 
 test_that("pay_paye works for pay at first bracket threshold", {
-  expect_equal(pay_paye(annual_pay_taxable = 12570,
+  expect_equal(pay_paye(annual_income_taxable = 12570,
                         personal_allowance = 12570,
                         basic_rate_upper = 50270,
                         higher_rate_upper = 125140,
@@ -21,7 +21,7 @@ test_that("pay_paye works for pay at first bracket threshold", {
 })
 
 test_that("pay_paye works for pay in the first bracket", {
-  expect_equal(pay_paye(annual_pay_taxable = 15000,
+  expect_equal(pay_paye(annual_income_taxable = 15000,
                         personal_allowance = 12570,
                         basic_rate_upper = 50270,
                         higher_rate_upper = 125140,
@@ -32,7 +32,7 @@ test_that("pay_paye works for pay in the first bracket", {
 })
 
 test_that("pay_paye works for pay in the second bracket", {
-  expect_equal(pay_paye(annual_pay_taxable = 60000,
+  expect_equal(pay_paye(annual_income_taxable = 60000,
                         personal_allowance = 12570,
                         basic_rate_upper = 50270,
                         higher_rate_upper = 125140,
@@ -43,7 +43,7 @@ test_that("pay_paye works for pay in the second bracket", {
 })
 
 test_that("pay_paye works for pay in the second bracket", {
-  expect_equal(pay_paye(annual_pay_taxable = 150000,
+  expect_equal(pay_paye(annual_income_taxable = 150000,
                         personal_allowance = 12570,
                         basic_rate_upper = 50270,
                         higher_rate_upper = 125140,
