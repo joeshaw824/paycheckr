@@ -20,8 +20,8 @@ I have tried to name variables in a consistent format, referring to the
 type of amount and the time interval it relates to.
 
 “Pay” in English can be both a noun and a verb. In this package I have
-tried not to use “pay” as a noun to mean the amount I am paid, and have
-instead called this value “income”. This means “pay” can be used in
+tried not to use “pay” as a noun to mean the amount I am paid[^1], and
+have instead called this value “income”. This means “pay” can be used in
 function names as a verb. For example, the “pay_pension” function
 returns the amount of money I have to **pay** into my pension from my
 **income**.
@@ -36,3 +36,6 @@ ni (National Insurance)
 **Variable format**: interval_category_modifier
 
 **Examples**: weekly_ni, monthly_pension, annual_income_taxable
+
+[^1]: Except in the name of the package, but I say that’s allowed and I
+    make the rules round here.
